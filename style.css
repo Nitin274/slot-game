@@ -1,0 +1,89 @@
+:root{
+    --speed:1;
+}
+.slide
+{
+    padding: 10px;
+    background-color: gray;
+    border:3px dashed solid black;
+    font-size: 20px;
+    text-align: center;
+}
+#inslide{
+    padding: 40px;
+    background-color: gray;
+    border: 2px solid black;
+    display: none;
+    font-size: 30px;
+    text-align: center;
+}
+#cslide{
+    background-color: gray;
+}
+.machine{
+    background-color: peru;
+    border:dashed 3px brown;
+    height: 300px;
+    width: 900px;
+    margin: 50px;
+    margin-left: 21%;
+    display: flex;
+}
+#inpspeed
+{
+    font-size: 30px;
+    margin-left: 50px;
+    width: 60px;
+}
+.slot
+{
+    height: 250px;
+    width: 250px;
+    margin: 20px;
+    background-color: beige;
+    background-color: solid darkblue 2px;
+    text-align: center;
+    font-size: 100pt;
+    line-height: 200px;
+    overflow: hidden;
+
+}
+.container{
+    margin-left: 20%;
+    height: 40px;
+    width: 80px;
+    font-size: 40px;
+    display: inline;
+}
+#result
+{
+    height: 150px;
+    margin-top: 30px;
+    margin-left: 39%;
+    text-align: center;
+    width: 250px;
+    background-color: cyan;
+    border: 3px dotted peru;
+}
+#btn{
+    display: block;
+    margin-left: 45%;
+    margin-top: 50px;
+    height: 50px;
+    width: 60px;
+    background-color: lightsalmon;
+}
+.slot > .value{
+    animation-name: slotspin;
+    animation-iteration-count: infinite;
+    animation-duration: calc(1s / var(--speed));
+}
+@keyframes slotspin
+{
+    0%{
+        transform: translateY(-200px);
+    }
+    100%{
+        transform: translateY(200px);
+    }
+}

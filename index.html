@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script async defer src="slot.js"></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="slide">
+        Please Read These Instruction Before Play This Game
+    </div>
+    <div id="inslide">
+    <p id="cslide">Select Your Emoji</p>
+    <p id="cslide">Click On Submit Button</p>
+    <p id="cslide">Change The Speed</p>
+   </div>
+    <div class="machine">
+        <div class="slot" id="slot1">
+            <div class="value" id="id1">😃</div></div>
+        <div class="slot" id="slot1">
+            <div class="value" id="id2">😍</div></div>
+        <div class="slot" id="slot1">
+            <div class="value" id="id3">🥺</div>
+           </div>
+    </div>
+    <input type="number" min="1" max="10" id="inpspeed">
+    <div class="container">
+        <input type="radio" name="select" value="😂">
+        <label>😂</label>
+        <input type="radio" name="select" value="😊">
+        <label>😊</label>
+        <input type="radio" name="select" value="😍">
+        <label>😍</label>
+        <input type="radio" name="select" value="😁">
+        <label>😁</label>
+        <input type="radio" name="select" value="😃">
+        <label>😃</label>
+        <input type="radio" name="select" value="😘">
+        <label>😘</label>
+        <input type="radio" name="select" value="🤗">
+        <label>🤗</label>
+    </div> 
+    <button id="btn" onclick="submit()">Submit</button>
+    <div id="result">Here Is Your result</div>
+</body>
+</html>
